@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/catkin_ws/install}
+: ${_CATKIN_SETUP_DIR:=/home/varadpawaskar/obstacleAvoidance/catkin_ws/install}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

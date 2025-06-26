@@ -1,8 +1,8 @@
-# Install script for directory: /home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/simulation_ws/src/robot_description
+# Install script for directory: /home/varadpawaskar/obstacleAvoidance/simulation_ws/src/robot_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/simulation_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/varadpawaskar/obstacleAvoidance/simulation_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/simulation_ws/build/robot_description/catkin_generated/installspace/robot_description.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/varadpawaskar/obstacleAvoidance/simulation_ws/build/robot_description/catkin_generated/installspace/robot_description.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_description/cmake" TYPE FILE FILES
-    "/home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/simulation_ws/build/robot_description/catkin_generated/installspace/robot_descriptionConfig.cmake"
-    "/home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/simulation_ws/build/robot_description/catkin_generated/installspace/robot_descriptionConfig-version.cmake"
+    "/home/varadpawaskar/obstacleAvoidance/simulation_ws/build/robot_description/catkin_generated/installspace/robot_descriptionConfig.cmake"
+    "/home/varadpawaskar/obstacleAvoidance/simulation_ws/build/robot_description/catkin_generated/installspace/robot_descriptionConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_description" TYPE FILE FILES "/home/saharsh/Desktop/WRO_Assignment/WRO_ROS_Solution/simulation_ws/src/robot_description/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_description" TYPE FILE FILES "/home/varadpawaskar/obstacleAvoidance/simulation_ws/src/robot_description/package.xml")
 endif()
 
