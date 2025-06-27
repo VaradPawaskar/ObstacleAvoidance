@@ -16,7 +16,16 @@ This work was done taking reference from [here](https://www.theconstructsim.com/
 This will launch the gazebo enviroment
 4. In another terminal, run the command `roslaunch robot_description spawn.launch`. 
 This will load the robot in the environment at origin. It can be spawned at different location by giving additional arguments like `x:=3 y:=8 z:=7`.  
-5. In another terminal run `rosrun motion_plan obstacle_avoidance.py`. This will start the robot and obstacle avoidance algorithm.
+5. In another terminal run `rosrun motion_plan obstacle_avoidance.py _x_goal:=<x> _y_goal:=<y>`.
+   The node will drive the robot toward the goal coordinates while avoiding obstacles.
+
+## Goal Based Navigation
+
+`obstacle_avoidance.py` now subscribes to `/odom` so that it knows the robot pose. The goal
+position can be provided through the private parameters `x_goal` and `y_goal`. The node
+computes a velocity command that steers the robot toward the goal while still using the
+original obstacle detection logic. When the robot reaches the goal (within 0.2&nbsp;m), it
+stops automatically.
 
 ## Video
 
